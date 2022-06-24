@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#474747"
+    tools:context=".PartDetailsActivity">
+
+    <ImageView
+        android:id="@+id/ivPhotoPartDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoryPartDetails"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/tvBrandPartDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="113dp"
+        android:layout_marginEnd="23dp"
+        android:text="Brand"
+        app:layout_constraintEnd_toEndOf="@+id/tvModelyearPartdetails"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDescriptionPartDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:text="Description..."
+        app:layout_constraintStart_toStartOf="@+id/tvModelyearPartdetails"
+        app:layout_constraintTop_toBottomOf="@+id/tvBrandPartDetails" />
+
+    <TextView
+        android:id="@+id/tvCategoryPartDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="7dp"
+        android:text="category..."
+        app:layout_constraintEnd_toEndOf="@+id/tvDescriptionPartDetails"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescriptionPartDetails" />
+
+    <TextView
+        android:id="@+id/tvModelyearPartdetails"
+        android:layout_width="85dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="8dp"
+        android:text="Modelyear"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescriptionPartDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
